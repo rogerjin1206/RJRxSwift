@@ -18,6 +18,8 @@ RxSwift의 핵심이자 제일 중요한 요소 `Observable`<br>
 `let observable = Observable<Any>.never()`(no emit,no finish 방출도없고 끝도없음 이것도 어따 써먹는지..흠..)<br>
 - range<br>
 `let observable = Observable<Int>.range(start: 1, count: 10)`(시퀸스대로 1~10까지 구독자한테 전달 for문과 비슷한)<br>
+- deferred<br>
+`let observable = Observable<Int>.deferred`(lazy 같은 녀석임 subscribe 될때 생성됨)<br>
 
 이렇게 3가지 정도로 Observable을 생성 할 수 있다.
 
