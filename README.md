@@ -40,8 +40,12 @@ Observable은 subscribe 를 통하여 구독 할 수 있는데 (subscribe = 구�
 [ReactiveX Doc Observable](http://reactivex.io/documentation/ko/observable.html).<br>
 [고무망치님의 좋은 Observable 예시](http://rhammer.tistory.com/283?category=649741.)<br>
 
-### Dispose
-updating...
+### Dispose and terminating
+`Observable`은 `subscribe`를 하지 않는 이상 아무런 동작도 하지않는다.<br>
+**completed**나 **error** 가 발생하기전까지는 계속 next이벤트를 발생시킨다.<br>
+- updating -
+
+
 
 # Subject
 `Subject`는 `Observable` 과 `Observer`의 역할을 동시에 수행한다.<br>
@@ -88,6 +92,8 @@ RxSwift에서는 4가지의 타입이 존재하지만 Variable은 조만간 depr
 구독자가 여러명이어도 상관 없다.중요 한건 **어느시점부터 구독했는가** 가 제일 중요한 요소이다.<br>
 
 신문 내용뿐만아니라 신문사의 상태에 대해서도 알 수 있다.
+
+- updating -
 
 
 
