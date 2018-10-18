@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1DD4361834265BB45B8DAFFC /* Pods_RJRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305BB9D237E9D3DE1B41CEDF /* Pods_RJRxSwift.framework */; };
+		56316DA021786863000893D9 /* TodoItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56316D9F21786863000893D9 /* TodoItemTableViewCell.swift */; };
+		56316DA221786EE6000893D9 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56316DA121786EE6000893D9 /* TodoViewModel.swift */; };
+		56CF1856214F84F300D7D3C5 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CF1855214F84F300D7D3C5 /* TableViewModel.swift */; };
 		56F8157A21426453006A3B58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F8157921426453006A3B58 /* AppDelegate.swift */; };
-		56F8157C21426453006A3B58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F8157B21426453006A3B58 /* ViewController.swift */; };
+		56F8157C21426453006A3B58 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F8157B21426453006A3B58 /* MainViewController.swift */; };
 		56F8157F21426453006A3B58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F8157D21426453006A3B58 /* Main.storyboard */; };
 		56F8158121426454006A3B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F8158021426454006A3B58 /* Assets.xcassets */; };
 		56F8158421426454006A3B58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F8158221426454006A3B58 /* LaunchScreen.storyboard */; };
@@ -17,9 +20,12 @@
 
 /* Begin PBXFileReference section */
 		305BB9D237E9D3DE1B41CEDF /* Pods_RJRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RJRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56316D9F21786863000893D9 /* TodoItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemTableViewCell.swift; sourceTree = "<group>"; };
+		56316DA121786EE6000893D9 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		56CF1855214F84F300D7D3C5 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 		56F8157621426453006A3B58 /* RJRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RJRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F8157921426453006A3B58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		56F8157B21426453006A3B58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56F8157B21426453006A3B58 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		56F8157E21426453006A3B58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56F8158021426454006A3B58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56F8158321426454006A3B58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,7 +52,6 @@
 				D823244C6F475BD33C1B1A04 /* Pods-RJRxSwift.debug.xcconfig */,
 				62AFB26F3BE46F47865C2231 /* Pods-RJRxSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -56,6 +61,46 @@
 				305BB9D237E9D3DE1B41CEDF /* Pods_RJRxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56316D9A21786719000893D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56316D9E2178679B000893D9 /* Cell */,
+				56316D9D21786734000893D9 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		56316D9B2178671E000893D9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				56316DA121786EE6000893D9 /* TodoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		56316D9C21786725000893D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		56316D9D21786734000893D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				56F8157B21426453006A3B58 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		56316D9E2178679B000893D9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				56316D9F21786863000893D9 /* TodoItemTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		56F8156D21426453006A3B58 = {
@@ -80,7 +125,10 @@
 			isa = PBXGroup;
 			children = (
 				56F8157921426453006A3B58 /* AppDelegate.swift */,
-				56F8157B21426453006A3B58 /* ViewController.swift */,
+				56CF1855214F84F300D7D3C5 /* TableViewModel.swift */,
+				56316D9C21786725000893D9 /* Model */,
+				56316D9A21786719000893D9 /* View */,
+				56316D9B2178671E000893D9 /* ViewModel */,
 				56F8157D21426453006A3B58 /* Main.storyboard */,
 				56F8158021426454006A3B58 /* Assets.xcassets */,
 				56F8158221426454006A3B58 /* LaunchScreen.storyboard */,
@@ -123,6 +171,7 @@
 				TargetAttributes = {
 					56F8157521426453006A3B58 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -163,15 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-RJRxSwift-checkManifestLockResult.txt",
 			);
@@ -185,21 +230,29 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RJRxSwift/Pods-RJRxSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -213,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56F8157C21426453006A3B58 /* ViewController.swift in Sources */,
+				56CF1856214F84F300D7D3C5 /* TableViewModel.swift in Sources */,
+				56F8157C21426453006A3B58 /* MainViewController.swift in Sources */,
+				56316DA021786863000893D9 /* TodoItemTableViewCell.swift in Sources */,
+				56316DA221786EE6000893D9 /* TodoViewModel.swift in Sources */,
 				56F8157A21426453006A3B58 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,8 +424,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jaejin.RJRxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -387,8 +443,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jaejin.RJRxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

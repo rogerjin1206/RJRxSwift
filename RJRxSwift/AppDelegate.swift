@@ -14,11 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = ViewController()
+
+        changeRootViewController()
+        
         return true
     }
 
@@ -45,5 +46,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension AppDelegate {
+    
+    // 루트뷰 컨트롤러 바꿔주기
+    public func changeRootViewController() {
+
+        guard let window = window else { return }
+        UIView.transition(with: window, duration: 1, options: .transitionCrossDissolve, animations: {
+            window.rootViewController = MainViewController()
+        }, completion: { completed in
+
+        })
+    }
+    
 }
 

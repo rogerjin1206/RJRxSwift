@@ -6,7 +6,11 @@ target 'RJRxSwift' do
   use_frameworks!
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxGesture'
+  pod 'RxAlamofire'
+  pod 'RxDataSources'
   pod 'SnapKit'
+  pod 'Then'
 
   # Pods for RJRxSwift
 
